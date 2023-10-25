@@ -20,7 +20,11 @@ def menu():
 
 
 def decode(sequence):
-    return "[no decode available]"
+    decoded_pass = ""
+    for i in sequence:
+        decreased_digit = str(((int(i) - 3) % 10))
+        decoded_pass += decreased_digit
+    return decoded_pass
     
     
 
